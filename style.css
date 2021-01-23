@@ -5,3 +5,18 @@
 body {
   //font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* Header */
+.container {
+  width: 90%;
+}
+.hide-on-med-and-down {
+  font-weight: 600;
+}
+a#logo {
+  font-size: 1.5em;
+}
+
+.nav-wrapper .material-icons {
+  font-size: 20px;
+}

@@ -6,17 +6,51 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
+  
   <header>
-    <nav>
-
+    
+    <nav class="black">
+      
+      <div class="container">
+        
+      <div class="nav-wrapper">        
+        
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        
+          <div class="row " style="border:rgb(31, 194, 206) solid 2px">
+          <a href="#" class="brand-logo col s1 push-s0" style="border:rgb(26, 172, 21) solid 2px">Uber</a>
+          <ul class="hide-on-med-and-down col s4" style="border:rgb(206, 31, 112) solid 2px">
+            <li><a href="#">Bedrijf</a></li>
+            <li><a href="#">Veiligheid</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        
+          <ul class="hide-on-med-and-down " style="border:rgb(77, 49, 201) solid 2px" > 
+            <li class="col s2"><a href="#"><i class="material-icons left">language </i>NL-NL</a></li>
+            <li class="col s2"><a href="#"><i class="material-icons left">apps</i>Producten</a></li>
+            <li class="col s2"><a href="#"><i class="material-icons left">person_outline</i>Inloggen</a></li>
+            <li class="col s1 "><a href="#">Aanmelden</a></li>
+          </ul>
+          </div>
+        
+      </div>
+    </div>
     </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Sass</a></li>
+      <li><a href="#">Components</a></li>
+      <li><a href="#">Javascript</a></li>
+      <li><a href="#">Mobile</a></li>
+    </ul>
+
+  
     <div class="sub-nav">
       
     </div>
@@ -49,6 +83,20 @@
 
   </footer>
   
+
+<script
+  src="http://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
   
 </body>
+
 </html>
