@@ -14,34 +14,23 @@
   
   <header>
     
-    <nav class="black">
+    <div class="navi">      
       
-      <div class="container">
-        
-      <div class="nav-wrapper">        
-        
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        
-        
-          <div class="row " style="border:rgb(31, 194, 206) solid 2px">
-          <a href="#" class="brand-logo col s1 push-s0" style="border:rgb(26, 172, 21) solid 2px">Uber</a>
-          <ul class="hide-on-med-and-down col s4" style="border:rgb(206, 31, 112) solid 2px">
+          <!--<a href="#"><i class="material-icons">menu</i></a>-->
+          <a href="#" class="logo" style="border:rgb(26, 172, 21) solid 2px">Uber</a>
+          <ul style="border:rgb(206, 31, 112) solid 2px">
             <li><a href="#">Bedrijf</a></li>
             <li><a href="#">Veiligheid</a></li>
             <li><a href="#">Help</a></li>
+            <li class="big"><a href="#">Informatie over COVID-19</a></li>
+
+            <li><a href="#"><i class="material-icons left">language </i>NL-NL</a></li>
+            <li ><a href="#"><i class="material-icons left">apps</i>Producten</a></li>
+            <li ><a href="#"><i class="material-icons left">person_outline</i>Inloggen</a></li>
+            <li ><a href="#">Aanmelden</a></li>
           </ul>
-        
-          <ul class="hide-on-med-and-down " style="border:rgb(77, 49, 201) solid 2px" > 
-            <li class="col s2"><a href="#"><i class="material-icons left">language </i>NL-NL</a></li>
-            <li class="col s2"><a href="#"><i class="material-icons left">apps</i>Producten</a></li>
-            <li class="col s2"><a href="#"><i class="material-icons left">person_outline</i>Inloggen</a></li>
-            <li class="col s1 "><a href="#">Aanmelden</a></li>
-          </ul>
-          </div>
         
       </div>
-    </div>
-    </nav>
   
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#">Sass</a></li>
@@ -52,7 +41,16 @@
 
   
     <div class="sub-nav">
-      
+      <ul>
+        <li><a href="#"><div class="pict beloning"></div>Beloning</br>ontvangen</a></li>
+        <li><a href="#"><div class="pict instappen"></div>Instappen</a></li>
+        <li><a href="#"><div class="pict eten"></div>Eten</a></li>
+        <li><a href="#"><div class="pict freight"></div>Uber Freight</a></li>
+        <li><a href="#"><div class="pict zakelijk"></div>Zakelijk</a></li>
+        <li><a href="#"><div class="pict ov"></div>Ov</a></li>
+        <li><a href="#"><div class="pict fiets"></div>Fiets en</br>step</a></li>
+        
+      </ul>
     </div>
     <div class="card">
 
@@ -91,11 +89,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
-<script>
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-</script>
+
   
 </body>
 

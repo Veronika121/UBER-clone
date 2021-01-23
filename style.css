@@ -3,20 +3,101 @@
   padding: 0;
 }
 body {
-  //font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Header */
-.container {
-  width: 90%;
+/**** Header ****/
+
+/*navi*/
+.navi {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: black;
+  color: white;
 }
-.hide-on-med-and-down {
-  font-weight: 600;
+.navi ul li a {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 0.3em 0.7em 0.3em 0.7em;
 }
-a#logo {
-  font-size: 1.5em;
+a.logo {
+  display: block;
+  width: 100px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+}
+.navi ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.navi ul li {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+.big {
+  flex: 1 2 0;
+  border: blue solid 2px;
 }
 
-.nav-wrapper .material-icons {
-  font-size: 20px;
+/*sub-nav*/
+.sub-nav {
+  border: blue solid 2px;
+}
+.sub-nav ul {
+  border-bottom: rgb(224, 224, 224) solid 2px;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  background-color: burlywood;
+}
+.sub-nav ul li:first-child {
+  border-bottom: rgb(0, 0, 0) solid 3px;
+}
+.sub-nav ul li {
+  height: 74px;
+  width: 105px;
+}
+.sub-nav ul li a {
+  //border: rgb(212, 50, 163) solid 2px;
+  display: block;
+  padding: 1px 12px 20px 12px;
+  color: black;
+  text-align: center;
+  line-height: 1em;
+}
+.sub-nav .pict {
+  height: 30px;
+  //border: rgb(67, 85, 119) solid 2px;
+  margin-bottom: 5px;
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sub-nav .beloning {
+  background-image: url(/images/Earn-filled.svg);
+}
+.sub-nav .instappen {
+  background-image: url(/images/car-front-outlined.svg);
+}
+.sub-nav .eten {
+  background-image: url(/images/restaurant-outlined.svg);
+}
+.sub-nav .freight {
+  background-image: url(/images/truck-outlined.svg);
+}
+.sub-nav .zakelijk {
+  background-image: url(/images/briefcase-outlined.svg);
+}
+.sub-nav .ov {
+  background-image: url(/images/bike-outlined.svg);
+}
+
+.sub-nav .fiets {
+  background-image: url(/images/bike-outlined.svg);
 }
