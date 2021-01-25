@@ -2,12 +2,11 @@
   border: 0;
   padding: 0;
 }
-body {
-}
 
 /**** Header ****/
 
 /*navi*/
+
 .navi {
   display: flex;
   justify-content: space-evenly;
@@ -52,6 +51,12 @@ a.logo {
 .big {
   flex: 1 2 0;
 }
+.fa-globe,
+.fa-th,
+.fa-user-o,
+.fa-map-marker {
+  padding-right: 0.7em;
+}
 .screen {
   display: none;
 }
@@ -64,19 +69,13 @@ a.logo {
 .navi ul li ul#innavi {
   width: 200px;
   position: absolute;
-
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -20px;
   display: none;
   padding-top: 44px;
-  margin-bottom: 50px;
-  //border: aquamarine solid 2px;
 }
 .box {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px;
-  //border: rgb(255, 127, 217) solid 2px;
 }
 .navi ul li ul#innavi li a {
   display: block;
@@ -84,8 +83,6 @@ a.logo {
   line-height: 35px;
   color: rgb(117, 117, 117);
   border-radius: 0;
-  //border: rgb(150, 127, 255) solid 2px;
-
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -99,9 +96,9 @@ ul#innavi:hover {
   display: block;
 }
 
+/****Main***/
+
 /*sub-nav*/
-.sub-nav {
-}
 .sub-nav ul {
   border-bottom: rgb(224, 224, 224) solid 2px;
   display: flex;
@@ -129,9 +126,7 @@ ul#innavi:hover {
 }
 .sub-nav .pict {
   height: 35px;
-  //border: rgb(67, 85, 119) solid 2px;
   margin-bottom: 10px;
-
   background-size: 17px;
   background-repeat: no-repeat;
   background-position: center;
@@ -206,21 +201,17 @@ h1 {
 }
 
 /*banner*/
-.banner {
-  //max-width: 1349px;
-  height: 760px;
-  background-color: ;
-  background-image: url(images/Product-Masthead-Desktop_2.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
-/****Main***/
+.banner {
+  height: 362px;
+  background-image: url(images/Product-Masthead-Mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 /*section 1*/
 
 .block1 {
-  border: rgb(182, 23, 97) solid 2px;
   max-width: 1280px;
   margin: 2em;
 }
@@ -231,31 +222,28 @@ h1 {
   text-decoration: underline;
   color: rgb(187, 187, 187);
 }
-.link {
-  color: rgb(0, 0, 0);
 
-  //background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
-  //  linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
-}
 h2 {
   margin-top: 0px;
   font-size: 32px;
-  font-weight: 520;
+  font-weight: 510;
 }
 
 /*block2*/
 .block2 {
-  max-width: 2560px;
-  height: 640px;
-  background-color: ;
-  background-image: url(images/Modalities_banner_home.jpg);
+  height: 400px;
+  background-image: url(images/modalities_3x2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-size: 100%;
+  border: blueviolet solid 2px;
 }
 
 /****Footer****/
 footer {
   color: white;
+  font-size: 1.2em;
+  line-height: 2em;
 }
 footer .container {
   width: 90%;
@@ -280,38 +268,54 @@ footer a:active {
   flex-wrap: wrap;
 }
 .list ul {
-  width: 100%;
+  width: 100%; /*one column of links in the footer*/
 }
 
-/*между 560 и 1135 в подвале ссылки в две колонки - готово*/
+.socials {
+  margin: 30px auto 30px -11px;
+}
+.socials a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}
+.socials a:hover,
+.location a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.location a {
+  padding: 10px;
+  margin-left: -10px;
+}
+.copyright,
+.privacy a {
+  color: rgb(158, 158, 158);
+  font-size: 0.7em;
+}
+.privacy a:hover {
+  color: rgb(105, 105, 105);
+}
+
 @media screen and (min-width: 560px) and (max-width: 1135px) {
   .list ul {
-    width: 50%;
+    width: 50%; /*two columns of links in the footer*/
   }
 }
-
-/*не сделано - после 647 до 1135 - вторая ссылка рядом с первой на первой карточке*/
 
 @media screen and (min-width: 647px) and (max-width: 1135px) {
   .card1 div {
-    float: left;
+    float: left; /* two links in a row on card1*/
   }
-}
-/*до 767 - мобильный мужик, */
-@media screen and (max-width: 767px) {
-  .banner {
-    //max-width: 483px;
-    height: 362px;
-    background-image: url(images/Product-Masthead-Mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  .block2 {
+    height: 640px;
   }
 }
 
-/*с 767 до 1119 мужик по центру PMT, */
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   .banner {
-    //max-width: 894px;
     height: 503px;
     background-image: url(images/Product-Masthead-Tablet.jpg);
     background-repeat: no-repeat;
@@ -319,37 +323,30 @@ footer a:active {
   }
 }
 
-/*с 1120 и выше мужик сбоку (PMD2)*/
 @media screen and (min-width: 1120px) {
   .banner {
-    //max-width: 894px;
     height: 760px;
     background-image: url(images/Product-Masthead-Desktop_2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 0;
+    border: red solid 2px;
   }
 }
 
-/*мобильное меню. до 1135 меню урезанное, все блоки в столбик, блок - белый фон (а не серый)*/
-@media screen and (max-width: 1135px) {
-}
-
-/*выше 1136 - меню полное, в подвале ссылки в 3 колонки, - готово
+/*
 нижние ссылки в колонки, 
-первая карточка на мужике и на ней ссылки в столбик, 
-блок на рисунке, мужик - десктоп*/
+*/
 
 @media screen and (min-width: 1136px) {
   .screen {
-    display: inline;
+    display: inline; /*navbar voor screen*/
   }
-
   .mobil {
     display: none;
   }
   .sub-nav {
     float: left;
-
     width: 100%;
   }
   .sub-nav ul {
@@ -365,7 +362,6 @@ footer a:active {
   }
   .card1 {
     float: left;
-
     margin: 0 0 0 6em;
     width: 570px;
     padding: 48px;
@@ -375,7 +371,48 @@ footer a:active {
     font-size: 52px;
     font-weight: 600;
   }
+
+  .block2 {
+    height: 700px;
+    background-image: url(images/Modalities_banner_home.jpg);
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .block1 {
+    width: 540px;
+    padding: 50px;
+  }
   .list ul {
-    width: auto;
+    width: auto; /*three columns of links in the footer*/
+  }
+  .socials {
+    float: left;
+    margin-right: 50px;
+  }
+  .location {
+    margin-top: 30px;
+  }
+  .location p {
+    display: inline;
+    margin-top: 30px;
+  }
+  .apps {
+    float: right;
+    margin-top: -40px;
+  }
+  .copyright {
+    position: absolute;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .privacy {
+    text-align: right;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+  .privacy a {
+    padding-left: 20px;
   }
 }
