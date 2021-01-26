@@ -234,7 +234,6 @@ h2 {
   height: 400px;
   background-image: url(images/modalities_3x2.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
   background-size: 100%;
   border: blueviolet solid 2px;
 }
@@ -371,10 +370,14 @@ footer a:active {
     font-size: 52px;
     font-weight: 600;
   }
+  .banner {
+    background-color: #f6f6f6;
+  }
 
   .block2 {
     height: 700px;
     background-image: url(images/Modalities_banner_home.jpg);
+    background-color: #f6f6f6;
   }
   h2 {
     font-size: 36px;
