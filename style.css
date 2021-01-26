@@ -132,26 +132,26 @@ ul#innavi:hover {
   background-position: center;
 }
 .sub-nav .beloning {
-  background-image: url(/images/Earn-filled.svg);
+  background-image: url(images/Earn-filled.svg);
 }
 .sub-nav .instappen {
-  background-image: url(/images/car-front-outlined.svg);
+  background-image: url(images/car-front-outlined.svg);
 }
 .sub-nav .eten {
-  background-image: url(/images/restaurant-outlined.svg);
+  background-image: url(images/restaurant-outlined.svg);
 }
 .sub-nav .freight {
-  background-image: url(/images/truck-outlined.svg);
+  background-image: url(images/truck-outlined.svg);
 }
 .sub-nav .zakelijk {
-  background-image: url(/images/briefcase-outlined.svg);
+  background-image: url(images/briefcase-outlined.svg);
 }
 .sub-nav .ov {
-  background-image: url(/images/train-outlined.svg);
+  background-image: url(images/train-outlined.svg);
 }
 
 .sub-nav .fiets {
-  background-image: url(/images/bike-outlined.svg);
+  background-image: url(images/bike-outlined.svg);
 }
 
 /*card*/
