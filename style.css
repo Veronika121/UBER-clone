@@ -165,17 +165,22 @@ ul#innavi:hover {
   font-size: 16px;
   margin-top: 0;
 }
-.card1 p a {
-  text-decoration: underline;
-  color: rgb(187, 187, 187);
-}
+
 .link {
   color: rgb(0, 0, 0);
   line-height: 50px;
   height: 50px;
-
-  //background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
-  //  linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
+  padding-bottom: 6px;
+  background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
+    linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
+  background-size: 0% 6px, 100% 6px;
+  background-repeat: no-repeat;
+  background-position: 0 bottom, 0 bottom;
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.link:hover {
+  background-size: 100% 6px, 100% 6px;
+  background-position: 0 bottom, 0 bottom;
 }
 h1 {
   margin-top: 0px;
@@ -219,7 +224,6 @@ h1 {
   font-size: 16px;
 }
 .block1 p a {
-  text-decoration: underline;
   color: rgb(187, 187, 187);
 }
 
@@ -235,7 +239,29 @@ h2 {
   background-image: url(images/modalities_3x2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  border: blueviolet solid 2px;
+}
+
+/*business*/
+.gallery img {
+  width: 100%;
+}
+.business {
+  margin: 2em;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 510;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-around;
+}
+.gallery .item {
+  margin-bottom: 2em;
 }
 
 /****Footer****/
@@ -298,9 +324,12 @@ footer a:active {
   color: rgb(105, 105, 105);
 }
 
-@media screen and (min-width: 560px) and (max-width: 1135px) {
+@media screen and (min-width: 600px) and (max-width: 1135px) {
   .list ul {
     width: 50%; /*two columns of links in the footer*/
+  }
+  .gallery .item {
+    width: calc(50% - 2em); /*two columns in the gallery*/
   }
 }
 
@@ -329,13 +358,8 @@ footer a:active {
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 0;
-    border: red solid 2px;
   }
 }
-
-/*
-нижние ссылки в колонки, 
-*/
 
 @media screen and (min-width: 1136px) {
   .screen {
@@ -379,6 +403,9 @@ footer a:active {
     background-image: url(images/Modalities_banner_home.jpg);
     background-color: #f6f6f6;
   }
+  .block1 {
+    margin-top: 0;
+  }
   h2 {
     font-size: 36px;
   }
@@ -386,6 +413,10 @@ footer a:active {
     width: 540px;
     padding: 50px;
   }
+  .gallery .item {
+    width: calc(33% - 2em); /*tree columns in the gallery*/
+  }
+  /*footer for screen*/
   .list ul {
     width: auto; /*three columns of links in the footer*/
   }
